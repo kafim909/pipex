@@ -16,7 +16,7 @@ CC			= gcc
 RM			= rm -f
 RN			= ranlib
 
-CFLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror -fsanitize=address -g3
 
 .c.o:
 			${CC} ${CFLAGS} -c -I${LIBFT} $< -o ${<:.c=.o}

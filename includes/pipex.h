@@ -6,7 +6,7 @@
 /*   By: mtournay <mtournay@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 10:39:01 by mtournay          #+#    #+#             */
-/*   Updated: 2021/10/07 15:51:13 by mtournay         ###   ########.fr       */
+/*   Updated: 2021/11/08 10:39:37 by mtournay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ typedef struct s_data
 }				t_data;
 
 char	*cat_dup(char *dst, char *src);
-void	get_cmd(char *argv, char **envp, t_data *v);
+int		get_cmd(char *argv, char **envp, t_data *v);
+int		end_process(t_data *v);
 #endif
